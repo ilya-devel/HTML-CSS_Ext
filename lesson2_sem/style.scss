@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+%font-normal {
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    list-style-type: none;
+    /* Firefox */
+}
+
+.container {
+    text-align: center;
+    @include central();
+}
+
+// Выделение текста цветом
+.select {
+    color: $colorSite;
+}
+
+.nav {
+    display: flex;
+    gap: $navGap;
+    @include flex();
+
+    &__link {
+        text-decoration: none;
+        @extend %font-normal;
+    }
+}
+
+.content {
+    display: flex;
+    gap: $navGap;
+    @include flex();
+
+    &__item {
+        width: $firthWidth;
+        height: 200px;
+        border: $borderMain;
+    }
+
+}

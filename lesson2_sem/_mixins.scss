@@ -1,0 +1,14 @@
+@import 'variables';
+
+@mixin central() {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+    margin-top: 30px;
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
