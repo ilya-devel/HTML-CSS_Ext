@@ -25,6 +25,10 @@
   border: 1px solid #A4A4A4;
   font-family: "Lato", sans-serif;
 }
+.order__lst_products__manage .btn-manage:hover {
+  background-color: #A4A4A4;
+  color: #FFFFFF;
+}
 .order__list {
   display: flex;
   flex-direction: column;
@@ -116,6 +120,10 @@
   font-weight: 400;
   font-family: "Lato", sans-serif;
 }
+.order__form__address .btn-quote:hover {
+  background-color: #A4A4A4;
+  color: #FFFFFF;
+}
 .order__form__price {
   display: flex;
   flex-direction: column;
@@ -154,6 +162,10 @@
   background-color: #F16D7F;
   border: none;
 }
+.order__form__submit:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+}
 .order__form__submit__place {
   width: calc(100% - 18px);
   padding-top: 17px;
@@ -183,6 +195,9 @@ summary::-webkit-details-marker {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #F16D7F;
+}
 
 .background_section {
   background-color: #222222;
@@ -210,6 +225,9 @@ a {
 .header__nav__left__search {
   fill: #E8E8E8;
 }
+.header__nav__left__search:hover {
+  fill: #F16D7F;
+}
 .header__nav__right {
   display: flex;
   align-items: center;
@@ -218,6 +236,9 @@ a {
 }
 .header__nav__right__menu {
   fill: #E8E8E8;
+}
+.header__nav__right__menu:hover {
+  fill: #F16D7F;
 }
 .header__nav__right__menu__list {
   position: fixed;
@@ -256,8 +277,14 @@ a {
 .header__nav__right__profile {
   fill: #E8E8E8;
 }
+.header__nav__right__profile:hover {
+  fill: #F16D7F;
+}
 .header__nav__right__cart {
   fill: #E8E8E8;
+}
+.header__nav__right__cart:hover {
+  fill: #F16D7F;
 }
 
 #burger {
@@ -291,6 +318,9 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #636363;
+}
+.top-head .breadcrumbs__link:hover {
+  color: #F16D7F;
 }
 .top-head .breadcrumbs__link_site {
   font-weight: 700;
@@ -404,6 +434,12 @@ a {
   align-items: center;
   gap: 11px;
 }
+.filter__summary:hover .filter__heading {
+  color: #F16D7F;
+}
+.filter__summary:hover path {
+  fill: #F16D7F;
+}
 .filter[open] {
   background: #FFF;
   box-shadow: 6px 3px 35px rgba(0, 0, 0, 0.21);
@@ -482,6 +518,12 @@ a {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.sort_filter__summary:hover .sort_filter__name {
+  color: #F16D7F;
+}
+.sort_filter__summary:hover path {
+  fill: #F16D7F;
 }
 .sort_filter__summary path {
   fill: #6F6E6E;
@@ -644,6 +686,13 @@ a {
   border: 1px solid #EF5B70;
   font-weight: 400;
   font-size: 16px;
+}
+.about_product__description__btn_add_to_cart:hover {
+  background-color: #EF5B70;
+  color: #FFF;
+}
+.about_product__description__btn_add_to_cart:hover path {
+  fill: #FFF;
 }
 
 .product_section {

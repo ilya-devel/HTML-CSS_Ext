@@ -24,6 +24,10 @@ summary::-webkit-details-marker {
 
 a {
     text-decoration: none;
+
+    &:hover {
+        color: $colorSelectSite;
+    }
 }
 
 .background_section {
@@ -52,6 +56,10 @@ a {
 
             &__search {
                 fill: $defNavMenuItemColor;
+
+                &:hover {
+                    fill: $colorSelectSite;
+                }
             }
         }
 
@@ -65,6 +73,10 @@ a {
 
             &__menu {
                 fill: $defNavMenuItemColor;
+
+                &:hover {
+                    fill: $colorSelectSite;
+                }
 
 
                 &__list {
@@ -109,10 +121,18 @@ a {
 
             &__profile {
                 fill: $defNavMenuItemColor;
+
+                &:hover {
+                    fill: $colorSelectSite;
+                }
             }
 
             &__cart {
                 fill: $defNavMenuItemColor;
+
+                &:hover {
+                    fill: $colorSelectSite;
+                }
             }
         }
     }
@@ -151,6 +171,10 @@ a {
         font-size: 14px;
         line-height: 17px;
         color: #636363;
+
+        &:hover {
+            color: $colorSelectSite;
+        }
     }
 
     .breadcrumbs__link_site {
@@ -291,6 +315,14 @@ a {
         display: flex;
         align-items: center;
         gap: 11px;
+
+        &:hover .filter__heading {
+            color: $colorSelectSite;
+        }
+
+        &:hover path {
+            fill: $colorSelectSite;
+        }
     }
 
     &[open] {
@@ -384,6 +416,14 @@ a {
         gap: 10px;
         // justify-content: center;
         align-items: center;
+
+        &:hover .sort_filter__name {
+            color: $colorSelectSite;
+        }
+
+        &:hover path {
+            fill: $colorSelectSite;
+        }
 
         & path {
             fill: #6F6E6E;
@@ -572,6 +612,15 @@ a {
             border: 1px solid #EF5B70;
             font-weight: 400;
             font-size: 16px;
+
+            &:hover {
+                background-color: #EF5B70;
+                color: #FFF;
+
+                path {
+                    fill: #FFF;
+                }
+            }
         }
     }
 }

@@ -26,6 +26,11 @@
                 background-color: #FFFFFF;
                 border: 1px solid #A4A4A4;
                 font-family: 'Lato', sans-serif;
+
+                &:hover {
+                    background-color: #A4A4A4;
+                    color: #FFFFFF;
+                }
             }
         }
     }
@@ -136,6 +141,11 @@
                 font-size: 11px;
                 font-weight: 400;
                 font-family: 'Lato', sans-serif;
+
+                &:hover {
+                    background-color: #A4A4A4;
+                    color: #FFFFFF;
+                }
             }
         }
 
@@ -181,6 +191,11 @@
             font-family: 'Lato', sans-serif;
             background-color: $colorSelectSite;
             border: none;
+
+            &:hover {
+                background-color: #FFFFFF;
+                color: $colorSelectSite;
+            }
 
             &__place {
                 width: calc(100% - 18px);
