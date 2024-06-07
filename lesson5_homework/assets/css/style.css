@@ -1138,4 +1138,32 @@ a:hover {
   .subscribe-info {
     flex-direction: column;
   }
+  .about_product__description {
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  .about_product__description__about {
+    padding: 32px 107px;
+  }
+  .products-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: inherit;
+  }
+  .filter-sort .filter {
+    position: inherit;
+    color: #000;
+  }
+  .filter-sort .filter ~ path {
+    fill: #000;
+  }
+  .filter-sort .sort {
+    position: inherit;
+  }
 }/*# sourceMappingURL=style.css.map */

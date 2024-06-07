@@ -988,4 +988,41 @@ a {
     .subscribe-info {
         flex-direction: column;
     }
+
+    .about_product {
+        &__description {
+            width: 100%;
+            margin: 0;
+            border: none;
+            border-bottom: 1px solid #EAEAEA;
+
+            &__about {
+                padding: 32px 107px;
+            }
+        }
+    }
+
+    .products-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-sort {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: inherit;
+
+        .filter {
+            position: inherit;
+            color: #000;
+
+            & ~path {
+                fill: #000;
+            }
+        }
+
+        .sort {
+            position: inherit;
+        }
+    }
 }
