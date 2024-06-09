@@ -566,6 +566,14 @@ a:hover {
 
 .filter-sort {
   height: 102px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.filter-sort__filter-layout {
+  position: relative;
+}
+.filter-sort__sort-layout {
   position: relative;
 }
 
@@ -1001,16 +1009,16 @@ a:hover {
   gap: 16px;
   color: #FBFBFB;
 }
-.feature__text-mini__icon {
+.feature__text-mini .text-mini__icon {
   width: 40px;
   height: 40px;
   margin-bottom: 3px;
 }
-.feature__text-mini__title {
+.feature__text-mini .text-mini__title {
   font-size: 20px;
   font-weight: 400;
 }
-.feature__text-mini__desc {
+.feature__text-mini .text-mini__desc {
   font-size: 14px;
   font-weight: 300;
   opacity: 0.67;
@@ -1078,6 +1086,7 @@ a:hover {
   padding-left: 22px;
   color: #222222;
   background-color: #E1E1E1;
+  width: 234px;
 }
 .subscribe-info__subscribe .btn-layout .btn-subscribe {
   border: none;
@@ -1151,19 +1160,23 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
   .filter-sort {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: inherit;
+    height: 51px;
+    grid-template-columns: repeat(2, 1fr);
   }
   .filter-sort .filter {
-    position: inherit;
-    color: #000;
-  }
-  .filter-sort .filter ~ path {
-    fill: #000;
+    top: 11px;
   }
   .filter-sort .sort {
-    position: inherit;
+    top: 11px;
+    left: calc(100% - 295px);
+  }
+  .feature {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    gap: 48px;
+  }
+  .feature__text-mini {
+    width: 360px;
   }
 }/*# sourceMappingURL=style.css.map */
