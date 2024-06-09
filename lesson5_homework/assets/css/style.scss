@@ -994,10 +994,36 @@ a {
 // @import 'order';
 
 @media (max-width: 768px) {
+// @media ((min-width: 768px) and (max-width: 1140px)) {
+
     .center {
         max-width: 768px;
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .our_brand_demo {
+        &__section {
+            justify-content: center;
+
+            &__text {
+                margin-left: 40px;
+                &__bold {
+                    font-size: 44px;
+                    font-weight: 900;
+                }
+
+                &__medium {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .categories {
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 125px;
     }
 
     .subscribe-info {

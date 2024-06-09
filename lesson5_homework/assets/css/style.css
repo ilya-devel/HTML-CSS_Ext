@@ -1144,6 +1144,24 @@ a:hover {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .our_brand_demo__section {
+    justify-content: center;
+  }
+  .our_brand_demo__section__text {
+    margin-left: 40px;
+  }
+  .our_brand_demo__section__text__bold {
+    font-size: 44px;
+    font-weight: 900;
+  }
+  .our_brand_demo__section__text__medium {
+    font-size: 24px;
+  }
+  .categories {
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 125px;
+  }
   .subscribe-info {
     flex-direction: column;
   }
