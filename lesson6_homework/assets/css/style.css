@@ -1294,4 +1294,34 @@ a:hover {
   .sort_filter__name {
     font-size: 12px;
   }
+  .about_product__photos__layout {
+    width: 375px;
+    display: flex;
+    align-items: center;
+  }
+  .about_product__photos__layout svg {
+    height: 624px;
+  }
+  .about_product__description__about {
+    padding: 32px 25px;
+  }
+  .about_product__description__line {
+    margin-top: 32px;
+    margin-bottom: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+  }
+  .about_product__description__chooses__chose__header__title {
+    font-size: 10px;
+  }
+  .about_product__description__btn_add_to_cart {
+    margin: 64px auto;
+  }
+  .empty_section__h100 {
+    height: 34px;
+  }
+  .empty_section__h130 {
+    height: 64px;
+  }
 }/*# sourceMappingURL=style.css.map */
