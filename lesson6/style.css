@@ -1,0 +1,110 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -75px;
+    top: 66vh;
+  }
+  50% {
+    left: 3vw;
+    top: 62vh;
+  }
+  100% {
+    left: calc(100vw - 75px);
+    top: 75vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -75px;
+    top: 5vh;
+  }
+  50% {
+    left: 45vw;
+    top: 78vh;
+  }
+  100% {
+    left: calc(100vw - 75px);
+    top: 59vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -75px;
+    top: 33vh;
+  }
+  50% {
+    left: 6vw;
+    top: 56vh;
+  }
+  100% {
+    left: calc(100vw - 75px);
+    top: 83vh;
+    visibility: hidden;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -75px;
+    top: 66vh;
+  }
+  50% {
+    left: 4vw;
+    top: 8vh;
+  }
+  100% {
+    left: calc(100vw - 75px);
+    top: 22vh;
+    visibility: hidden;
+  }
+}
+.body {
+  counter-reset: count;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.duck-check {
+  position: absolute;
+  visibility: hidden;
+  left: -9999999999px;
+}
+.duck-check:checked {
+  counter-increment: count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+
+.counter-info {
+  position: absolute;
+  top: 0;
+  right: 24px;
+}
+.counter-info::before {
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__image {
+  width: 75px;
+}
+.duck_1 {
+  animation: duck-fly-1 5s ease-in 1s both;
+}
+.duck_2 {
+  animation: duck-fly-2 5s ease-in 2s both;
+}
+.duck_3 {
+  animation: duck-fly-3 5s ease-in 3s both;
+}
+.duck_4 {
+  animation: duck-fly-4 5s ease-in 4s both;
+}/*# sourceMappingURL=style.css.map */

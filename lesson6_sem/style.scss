@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bulb-light1 {
+    0% {
+        fill: transparent;
+    }
+
+    50% {
+        fill: yellow;
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
+
+html {
+    counter-reset: light;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://earth-chronicles.ru/Publications_11/199/67got.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.bulb:checked {
+    counter-increment: light;
+
+    &~label {
+        display: none;
+    }
+}
+
+.bulb {
+    position: absolute;
+    left: -999999999;
+    visibility: hidden;
+}
+
+.box {
+    width: 35px;
+    position: absolute;
+
+}
+
+.light1 {
+    animation: bulb-light1 3s linear 0s both;
+    top: random($limit: 90)+vh;
+    left: random($limit: 90)+vw;
+}
+
+.light2 {
+    animation: bulb-light1 3s linear 1.5s both;
+    top: random($limit: 90)+vh;
+    left: random($limit: 90)+vw;
+}
+
+.light3 {
+    animation: bulb-light1 3s linear 3s both;
+    top: random($limit: 90)+vh;
+    left: random($limit: 90)+vw;
+}
+
+
+.count::after {
+    position: absolute;
+    top: 24px;
+    right: 48px;
+    content: counter(light);
+    color: white;
+}
