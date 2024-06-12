@@ -147,3 +147,16 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .register-section {
+        flex-direction: column;
+    }
+
+    .reg-info {
+        &__submit {
+            margin-top: 9px;
+            margin-bottom: 18px;
+        }
+    }
+}
