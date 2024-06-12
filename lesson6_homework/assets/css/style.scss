@@ -1140,6 +1140,7 @@ a {
 
         &__btn_all {
             margin-top: 40px;
+            margin-bottom: 32px;
         }
     }
 
@@ -1151,6 +1152,10 @@ a {
         &__text {
             text-align: left;
         }
+    }
+
+    .feature {
+        margin-top: 64px;
     }
 
     .subscribe-info {
@@ -1170,5 +1175,50 @@ a {
 
     }
 
+    .top-head {
+        padding-top: 24px;
+        padding-bottom: 46px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .filter {
+        padding-left: 0;
+        width: 50px;
+
+        &__content {
+            width: 328px;
+            background-color: #FFFFFF;
+            padding: 8px;
+            box-shadow: 6px 3px 35px rgba(0, 0, 0, 0.21);
+        }
+
+    &__svg {
+        width: 38px;
+        height: 25px;
+    }
+
+    &__heading {
+        display: none;
+    }
+}
+
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+
+    .sort {
+        gap: 24px;
+        left: calc(100% - 264px);
+    }
+}
+
+
+
+.sort_filter {
+    &__name {
+        font-size: 12px;
+    }
+}
 
 }
