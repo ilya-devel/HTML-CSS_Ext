@@ -24,6 +24,7 @@
   background-color: #FFFFFF;
   border: 1px solid #A4A4A4;
   font-family: "Lato", sans-serif;
+  text-transform: uppercase;
 }
 .order__lst_products__manage .btn-manage:hover {
   background-color: #A4A4A4;
@@ -119,6 +120,7 @@
   font-size: 11px;
   font-weight: 400;
   font-family: "Lato", sans-serif;
+  text-transform: uppercase;
 }
 .order__form__address .btn-quote:hover {
   background-color: #A4A4A4;
@@ -202,6 +204,73 @@
   }
   .order__form__price {
     width: 299px;
+  }
+}
+@media (max-width: 375px) {
+  .cart-head {
+    height: 78px;
+    align-items: center;
+  }
+  .cart-head .top-head__heading {
+    padding-top: 26px;
+  }
+  .order {
+    margin-top: 39px;
+    margin-bottom: 96px;
+    gap: 48px;
+  }
+  .order__list {
+    gap: 32px;
+    max-width: 359px;
+  }
+  .order__list__product_card {
+    width: 359px;
+  }
+  .order__list__product_card__other {
+    padding-left: 17px;
+    padding-top: 14px;
+    padding-right: 12px;
+  }
+  .order__list__product_card__img {
+    width: 144px;
+    height: 188px;
+  }
+  .order__list__product_card__info__title {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  .order__list__product_card__info__options {
+    margin-top: 26px;
+    font-size: 14px;
+    gap: 4px;
+  }
+  .order__lst_products {
+    gap: 30px;
+    width: 100%;
+  }
+  .order__lst_products__manage {
+    gap: 0;
+    justify-content: space-between;
+    max-width: 359px;
+  }
+  .order__lst_products__manage .btn-manage {
+    font-size: 12px;
+    line-height: 14.4px;
+    text-transform: capitalize;
+    padding: 0;
+    width: 175px;
+    height: 33px;
+  }
+  .order__form {
+    flex-direction: column;
+    width: 359px;
+    gap: 48px;
+  }
+  .order__form__address {
+    width: 359px;
+  }
+  .order__form__address .btn-quote {
+    text-transform: capitalize;
   }
 }
 .register-section {
@@ -1201,6 +1270,8 @@ a:hover {
 @media (max-width: 375px) {
   .center {
     max-width: 375px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .header__nav__right__profile {
     display: none;
@@ -1265,6 +1336,7 @@ a:hover {
     padding-bottom: 46px;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
   }
   .filter {
     padding-left: 0;
@@ -1323,5 +1395,17 @@ a:hover {
   }
   .empty_section__h130 {
     height: 64px;
+  }
+  .brand-sign {
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 43px;
+    padding-bottom: 24px;
+  }
+  .brand-sign__copyright {
+    order: 1;
+  }
+  .brand-sign__social-net {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */

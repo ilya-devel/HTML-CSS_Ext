@@ -1077,6 +1077,8 @@ a {
 @media (max-width: 375px) {
     .center {
         max-width: 375px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .header {
@@ -1180,6 +1182,7 @@ a {
         padding-bottom: 46px;
         flex-direction: column;
         gap: 32px;
+        align-items: center;
     }
 
     .filter {
@@ -1256,6 +1259,7 @@ a {
                     }
                 }
             }
+
             &__btn_add_to_cart {
                 margin: 64px auto;
             }
@@ -1269,6 +1273,21 @@ a {
 
         &__h130 {
             height: 64px;
+        }
+    }
+
+    .brand-sign {
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 43px;
+        padding-bottom: 24px;
+
+        &__copyright {
+            order: 1;
+        }
+
+        &__social-net {
+            padding: 0;
         }
     }
 

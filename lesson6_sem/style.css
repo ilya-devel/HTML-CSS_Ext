@@ -46,20 +46,20 @@ body {
 
 .light1 {
   animation: bulb-light1 3s linear 0s both;
-  top: 29vh;
-  left: 23vw;
+  top: 50vh;
+  left: 38vw;
 }
 
 .light2 {
   animation: bulb-light1 3s linear 1.5s both;
-  top: 48vh;
-  left: 53vw;
+  top: 58vh;
+  left: 44vw;
 }
 
 .light3 {
   animation: bulb-light1 3s linear 3s both;
-  top: 55vh;
-  left: 37vw;
+  top: 57vh;
+  left: 40vw;
 }
 
 .count::after {
